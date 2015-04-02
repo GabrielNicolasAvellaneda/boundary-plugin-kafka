@@ -37,12 +37,6 @@ kafka.csv.metrics.reporter.enabled=true
 ### Metrics Collected
 |Metric Name          |Description                       |
 |:--------------------|:--------------------------------                                                                                                                           |
-|Nginx Active Connections     |Active connections to nginx                                                                   |
-|Nginx Reads                  |Connections with Nginx reading request headers                                                |
-|Nginx Writes                 |Connections with Nginx reading request body, processing request or writing response to client.|
-|Nginx Waiting                |Keep-alive connections with Nginx in a wait state                                             |
-|Nginx Connections Handled    |Connections handled by nginx                                                                  |
-|Nginx Connections Not Handled|Connections accepted, but not handled                                                         |
-|Nginx Requests               |Requests to nginx                                                                             |
-|Nginx Requests per Connection|Requests per handled connections for nginx                                                    |
+|KAFKA BYTES OUT PER SEC     |Kafka bytes out per sec                                                                   |
+                                                  |
 |                                                                                                                            |
