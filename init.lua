@@ -27,11 +27,12 @@ end
 local files = {
   {"BytesOutPerSec.csv", "KAFKA BYTES OUT PER SEC", "count"},
   {"IsrExpandsPerSec.csv", "KAFKA ISR EXPANDS PER SEC", "count"},
-  -- "PartitionCount.csv",
-  -- "ConsumerExpiresPerSecond.csv",        "LeaderCount.csv",                     "PurgatorySize.csv",
-  -- "ExpiresPerSecond.csv",                "MaxLag.csv",                          "RequestHandlerAvgIdlePercent.csv",
-  -- "FailedFetchRequestsPerSec.csv",       "NetworkProcessorAvgIdlePercent.csv",  "ResponseQueueSize.csv",
-  -- "FailedProduceRequestsPerSec.csv",     "NumDelayedRequests.csv",              "ResponsesBeingSent.csv",
+  {"PartitionCount.csv", "KAFKA PARTITION COUNT", "value"},
+  {"ConsumerExpiresPerSecond.csv", "KAFKA CONSUMER EXPIRES PER SECOND", "count"},
+  {"LeaderCount.csv", "KAFKA LEADER COUNT", "value"},
+  {"PurgatorySize.csv", "KAFKA PURGATORY SIZE", "value"},
+  {"ResponseQueueSize.csv", "KAFKA RESPONSE QUEUE SIZE", "value"},
+  {"MaxLag.csv", "KAFKA MAX LAG SIZE", "value"},
 }
 
 function parseLine(line,sep)
@@ -92,7 +93,6 @@ function length(t)
 end
 
 function parseCSV(body)
-
   local lines = split(body, "\n")
   local head = lines[1]
   local last = lines[length(lines)]
@@ -101,7 +101,6 @@ function parseCSV(body)
     r[v] = parseLine(last)[i]
   end
  return r
-
 end
 
 

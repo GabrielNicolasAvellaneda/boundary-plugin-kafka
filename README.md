@@ -25,9 +25,6 @@ kafka.csv.metrics.dir=/var/log/kafka/csv_metrics
 kafka.csv.metrics.reporter.enabled=true
 
 ```
-
-
-
 #### Plugin Configuration Fields
 
 |Field Name|Description                                                |
@@ -36,7 +33,13 @@ kafka.csv.metrics.reporter.enabled=true
 
 ### Metrics Collected
 |Metric Name          |Description                       |
-|:--------------------|:--------------------------------                                                                                                                           |
-|KAFKA BYTES OUT PER SEC     |Kafka bytes out per sec                                                                   |
-                                                  |
+|:---------|:----------------------------------------------------------|
+| KAFKA BYTES OUT PER SEC | Bytes out per second
+| KAFKA ISR EXPANDS PER SEC | ISR EXPANDS out per second
+| KAFKA PARTITION COUNT | Partition count
+| KAFKA LEADER COUNT | Leader count
+| KAFKA PURGATORY SIZE | Purgatory size
+| KAFKA CONSUMER EXPIRES PER SEC | Consumer expires per second
+| KAFKA MAX LAG SIZE | Max lag size
+| KAFKA RESPONSE QUEUE SIZE | Response queue size
 |                                                                                                                            |

@@ -1,0 +1,14 @@
+{
+    "description": "Boundary Kafka Plugin",
+    "icon" : "icon.png",
+    “command_lua” : “boundary-meter init.lua”,
+    "metrics" : [],
+    "paramSchema" : [
+          {
+              "title" : "Path",
+              "name" : "path",
+              "description" : "The path to the metrics directory",
+              "type" : "string"
+          },
+      ]
+  }
