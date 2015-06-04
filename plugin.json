@@ -24,6 +24,6 @@
             "name" : "path",
             "description" : "The path to the metrics directory",
             "type" : "string"
-        },
+        }
     ]
 }
