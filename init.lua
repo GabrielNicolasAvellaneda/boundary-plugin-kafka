@@ -4,6 +4,8 @@ local io       = require('io')
 local fs       = require('fs')
 
 local __pgk        = "BOUNDARY KAFKA"
+local __ver        = "version 1.0"
+local __tags       = "kafka, lua, plugin"
 local _previous    = {}
 local path         = "/var/log/kafka/csv_metrics"
 local pollInterval = 1000
@@ -20,19 +22,21 @@ end
 
 
 function berror(err)
-  if err then print(string.format("%s ERROR: %s", __pgk, tostring(err))) return err end
+  if err then print(string.format("_bevent:%s : %s : %s|t:error|tags:%s", __pgk, __ver, tostring(err), __tags)) return err end
 end
 
 
 local files = {
-  {"BytesOutPerSec.csv", "KAFKA BYTES OUT PER SEC", "count"},
-  {"IsrExpandsPerSec.csv", "KAFKA ISR EXPANDS PER SEC", "count"},
-  {"PartitionCount.csv", "KAFKA PARTITION COUNT", "value"},
-  {"ConsumerExpiresPerSecond.csv", "KAFKA CONSUMER EXPIRES PER SECOND", "count"},
-  {"LeaderCount.csv", "KAFKA LEADER COUNT", "value"},
-  {"PurgatorySize.csv", "KAFKA PURGATORY SIZE", "value"},
-  {"ResponseQueueSize.csv", "KAFKA RESPONSE QUEUE SIZE", "value"},
-  {"MaxLag.csv", "KAFKA MAX LAG SIZE", "value"},
+  {"MessagesInPerSec.csv", "KAFKA_MESSAGES_IN_PER_SEC", "count"},
+  {"BytesOutPerSec.csv", "KAFKA_BYTES_OUT_PER_SEC", "count"},
+  {"BytesOutPerSec.csv", "KAFKA_BYTES_OUT_PER_SEC", "count"},
+  {"IsrExpandsPerSec.csv", "KAFKA_ISR_EXPANDS_PER_SEC", "count"},
+  {"PartitionCount.csv", "KAFKA_PARTITION_COUNT", "value"},
+  {"ConsumerExpiresPerSecond.csv", "KAFKA_CONSUMER_EXPIRES_PER_SECOND", "count"},
+  {"LeaderCount.csv", "KAFKA_LEADER_COUNT", "value"},
+  {"PurgatorySize.csv", "KAFKA_PURGATORY_SIZE", "value"},
+  {"ResponseQueueSize.csv", "KAFKA_RESPONSE_QUEUE_SIZE", "value"},
+  {"MaxLag.csv", "KAFKA_MAX_LAG_SIZE", "value"},
 }
 
 function parseLine(line,sep)
@@ -108,7 +112,7 @@ function printStats(desc, v)
   print(string.format('%s %d %s', desc, v, source))
 end
 
-print("_bevent:KAFKA plugin up : version 1.0|t:info|tags:kafka, lua, plugin")
+print(string.format("_bevent: %s : %s : UP|t:info|tags:%s", __pgk, __ver, __tags))
 
 timer.setInterval(pollInterval, function ()
 
@@ -121,7 +125,4 @@ timer.setInterval(pollInterval, function ()
   end
 
 end)
-
-
-
 

@@ -1,14 +1,29 @@
 {
     "description": "Boundary Kafka Plugin",
     "icon" : "icon.png",
+    “command” : “boundary-meter init.lua”,
+    "postInstall" : "",
     “command_lua” : “boundary-meter init.lua”,
-    "metrics" : [],
+    "postInstall_lua" : "",
+    "ignore" : "",
+
+    "metrics" : [
+        "KAFKA_BYTES_OUT_PER_SEC",
+        "KAFKA_ISR_EXPANDS_PER_SEC",
+        "KAFKA_PARTITION_COUNT",
+        "KAFKA_CONSUMER_EXPIRES_PER_SECOND",
+        "KAFKA_LEADER_COUNT",
+        "KAFKA_PURGATORY_SIZE",
+        "KAFKA_RESPONSE_QUEUE_SIZE",
+        "KAFKA_MAX_LAG_SIZE"
+    ],
+
     "paramSchema" : [
-          {
-              "title" : "Path",
-              "name" : "path",
-              "description" : "The path to the metrics directory",
-              "type" : "string"
-          },
-      ]
-  }
+        {
+            "title" : "Path",
+            "name" : "path",
+            "description" : "The path to the metrics directory",
+            "type" : "string"
+        },
+    ]
+}
