@@ -2,7 +2,7 @@
   "KAFKA_BYTES_OUT_PER_SEC" : {
     "displayName": "Kafka Bytes De-Queued Per Secon",
     "description": "The number of bytes being read out of the Kafka queues per second",
-    "unit": "int",
+    "unit": "number",
     "displayNameShort": "Kafka BOPS",
     "defaultResolutionMS": 0,
     "isDisabled": 0,
@@ -11,7 +11,7 @@
   "KAFKA_ISR_EXPANDS_PER_SEC" : {
     "displayName": "Kafka ISR Growth per Second",
     "description": "The number of in-sync-replica expand calls per second",
-    "unit": "int",
+    "unit": "number",
     "displayNameShort": "Kafka ISR Growth",
     "defaultResolutionMS": 0,
     "isDisabled": 0,
@@ -20,7 +20,7 @@
   "KAFKA_PARTITION_COUNT" : {
     "displayName": "Number of Kafka Partitions",
     "description": "The number of Kafka partitions being used",
-    "unit": "int",
+    "unit": "number",
     "displayNameShort": "Kafka Partitions",
     "defaultResolutionMS": 0,
     "isDisabled": 0,
@@ -29,7 +29,7 @@
   "KAFKA_CONSUMER_EXPIRES_PER_SECOND" : {
     "displayName": "Kafka Expires Per Second",
     "description": "The number of Kafka consumers who have expired per second",
-    "unit": "int",
+    "unit": "number",
     "displayNameShort": "Kafka Expires",
     "defaultResolutionMS": 0,
     "isDisabled": 0,
@@ -38,7 +38,7 @@
   "KAFKA_LEADER_COUNT" : {
     "displayName": "Kafka Leader Count",
     "description": "The number of Kafka leaders maintaining the Kafka partitions",
-    "unit": "int",
+    "unit": "number",
     "displayNameShort": "Kafka Leaders",
     "defaultResolutionMS": 0,
     "isDisabled": 0,
@@ -47,7 +47,7 @@
   "KAFKA_PURGATORY_SIZE" : {
     "displayName": "Kafka Purgatory Size",
     "description": "The size of the holding pen for requests waiting to be satisfied",
-    "unit": "int",
+    "unit": "number",
     "displayNameShort": "Kafka Purgatory",
     "defaultResolutionMS": 0,
     "isDisabled": 0,
@@ -56,7 +56,7 @@
   "KAFKA_RESPONSE_QUEUE_SIZE" : {
     "displayName": "Kafka Response Queue Size",
     "description": "The length of the queue handling waiting for Kafka responses",
-    "unit": "int",
+    "unit": "number",
     "displayNameShort": "Kafka Response Q",
     "defaultResolutionMS": 0,
     "isDisabled": 0,
@@ -65,7 +65,7 @@
   "KAFKA_MAX_LAG_SIZE": {
     "displayName": "Maximum started instances",
     "description": "The maximum number of instances started.",
-    "unit": "int",
+    "unit": "number",
     "displayNameShort": "OS INST MAX",
     "defaultResolutionMS": 0,
     "isDisabled": 0,
