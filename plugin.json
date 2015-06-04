@@ -1,9 +1,9 @@
 {
     "description": "Boundary Kafka Plugin",
     "icon" : "icon.png",
-    “command” : “boundary-meter init.lua”,
+    "command" : "boundary-meter init.lua",
     "postInstall" : "",
-    “command_lua” : “boundary-meter init.lua”,
+    "command_lua" : "boundary-meter init.lua",
     "postInstall_lua" : "",
     "ignore" : "",
 
