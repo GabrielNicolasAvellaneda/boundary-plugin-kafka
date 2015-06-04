@@ -1,5 +1,5 @@
 {
-  "KAFKA_BYTES_OUT_PER_SEC",: {
+  "KAFKA_BYTES_OUT_PER_SEC" : {
     "displayName": "Kafka Bytes De-Queued Per Secon",
     "description": "The number of bytes being read out of the Kafka queues per second",
     "unit": "int",
@@ -8,7 +8,7 @@
     "isDisabled": 0,
     "defaultAggregate": "avg"
   },
-  "KAFKA_ISR_EXPANDS_PER_SEC",: {
+  "KAFKA_ISR_EXPANDS_PER_SEC" : {
     "displayName": "Kafka ISR Growth per Second",
     "description": "The number of in-sync-replica expand calls per second",
     "unit": "int",
@@ -17,7 +17,7 @@
     "isDisabled": 0,
     "defaultAggregate": "avg"
   },
-  "KAFKA_PARTITION_COUNT",: {
+  "KAFKA_PARTITION_COUNT" : {
     "displayName": "Number of Kafka Partitions",
     "description": "The number of Kafka partitions being used",
     "unit": "int",
@@ -26,7 +26,7 @@
     "isDisabled": 0,
     "defaultAggregate": "max"
   },
-  "KAFKA_CONSUMER_EXPIRES_PER_SECOND",: {
+  "KAFKA_CONSUMER_EXPIRES_PER_SECOND" : {
     "displayName": "Kafka Expires Per Second",
     "description": "The number of Kafka consumers who have expired per second",
     "unit": "int",
@@ -35,7 +35,7 @@
     "isDisabled": 0,
     "defaultAggregate": "avg"
   },
-  "KAFKA_LEADER_COUNT",: {
+  "KAFKA_LEADER_COUNT" : {
     "displayName": "Kafka Leader Count",
     "description": "The number of Kafka leaders maintaining the Kafka partitions",
     "unit": "int",
@@ -44,7 +44,7 @@
     "isDisabled": 0,
     "defaultAggregate": "max"
   },
-  "KAFKA_PURGATORY_SIZE",: {
+  "KAFKA_PURGATORY_SIZE" : {
     "displayName": "Kafka Purgatory Size",
     "description": "The size of the holding pen for requests waiting to be satisfied",
     "unit": "int",
@@ -53,7 +53,7 @@
     "isDisabled": 0,
     "defaultAggregate": "max"
   },
-  "KAFKA_RESPONSE_QUEUE_SIZE",: {
+  "KAFKA_RESPONSE_QUEUE_SIZE" : {
     "displayName": "Kafka Response Queue Size",
     "description": "The length of the queue handling waiting for Kafka responses",
     "unit": "int",
