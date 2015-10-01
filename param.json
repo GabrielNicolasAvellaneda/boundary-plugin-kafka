@@ -1,4 +1,14 @@
 {
-	"pollInterval" : 1000,
-  "path" : "/var/log/kafka/csv_metrics",
+	"items" : [
+		{
+			"name" : "kafka-mbeans",
+			"user" : "",
+			"password" : "",
+			"host" : "localhost",
+			"port" : 9990,
+			"pollInterval" : 1000,
+			"source" : "kafka"
+		}
+	],
+	"pollInterval" : 1000
 }

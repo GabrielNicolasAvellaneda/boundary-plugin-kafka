@@ -1,74 +1,235 @@
 {
-  "KAFKA_BYTES_OUT_PER_SEC" : {
-    "displayName": "Kafka Bytes De-Queued Per Secon",
-    "description": "The number of bytes being read out of the Kafka queues per second",
-    "unit": "number",
-    "displayNameShort": "Kafka BOPS",
-    "defaultResolutionMS": 0,
-    "isDisabled": 0,
-    "defaultAggregate": "avg"
+  "CASSANDRA_COMPACTION_PENDING_TASKS": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Compaction Pending Tasks",
+    "displayName": "Compaction Pendings",
+    "displayNameShort": "Compact. Pendings",
+    "unit": "number"
   },
-  "KAFKA_ISR_EXPANDS_PER_SEC" : {
-    "displayName": "Kafka ISR Growth per Second",
-    "description": "The number of in-sync-replica expand calls per second",
-    "unit": "number",
-    "displayNameShort": "Kafka ISR Growth",
-    "defaultResolutionMS": 0,
-    "isDisabled": 0,
-    "defaultAggregate": "avg"
+  "CASSANDRA_COMPACTION_COMPLETED_TASKS": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Compaction Completed Tasks",
+    "displayName": "Compaction Completed",
+    "displayNameShort": "Compact. Completed",
+    "unit": "number"
   },
-  "KAFKA_PARTITION_COUNT" : {
-    "displayName": "Number of Kafka Partitions",
-    "description": "The number of Kafka partitions being used",
-    "unit": "number",
-    "displayNameShort": "Kafka Partitions",
-    "defaultResolutionMS": 0,
-    "isDisabled": 0,
-    "defaultAggregate": "max"
+  "CASSANDRA_COMPACTION_TOTAL_COMPLETED_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Compaction Completed Rate",
+    "displayName": "Compaction Rate",
+    "displayNameShort": "Compact. Completed Rate",
+    "unit": "number"
   },
-  "KAFKA_CONSUMER_EXPIRES_PER_SECOND" : {
-    "displayName": "Kafka Expires Per Second",
-    "description": "The number of Kafka consumers who have expired per second",
-    "unit": "number",
-    "displayNameShort": "Kafka Expires",
-    "defaultResolutionMS": 0,
-    "isDisabled": 0,
-    "defaultAggregate": "avg"
+  "CASSANDRA_CACHE_KEYCACHE_HITRATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Cache KeyCache Hit Rate",
+    "displayName": "KeyCache Hit Rate",
+    "displayNameShort": "KeyCache Hit Rate",
+    "unit": "number"
   },
-  "KAFKA_LEADER_COUNT" : {
-    "displayName": "Kafka Leader Count",
-    "description": "The number of Kafka leaders maintaining the Kafka partitions",
-    "unit": "number",
-    "displayNameShort": "Kafka Leaders",
-    "defaultResolutionMS": 0,
-    "isDisabled": 0,
-    "defaultAggregate": "max"
+  "CASSANDRA_CACHE_KEYCACHE_REQUESTS_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Cache KeyCache Requests Rate",
+    "displayName": "KeyCache Request Rate",
+    "displayNameShort": "KeyCache Req. Rate",
+    "unit": "number"
   },
-  "KAFKA_PURGATORY_SIZE" : {
-    "displayName": "Kafka Purgatory Size",
-    "description": "The size of the holding pen for requests waiting to be satisfied",
-    "unit": "number",
-    "displayNameShort": "Kafka Purgatory",
-    "defaultResolutionMS": 0,
-    "isDisabled": 0,
-    "defaultAggregate": "max"
+  "CASSANDRA_CACHE_KEYCACHE_ENTRIES": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Cache KeyCache Entries",
+    "displayName": "KeyCache Entries",
+    "displayNameShort": "KeyCache Entries",
+    "unit": "number"
   },
-  "KAFKA_RESPONSE_QUEUE_SIZE" : {
-    "displayName": "Kafka Response Queue Size",
-    "description": "The length of the queue handling waiting for Kafka responses",
-    "unit": "number",
-    "displayNameShort": "Kafka Response Q",
-    "defaultResolutionMS": 0,
-    "isDisabled": 0,
-    "defaultAggregate": "avg"
+  "CASSANDRA_CACHE_KEYCACHE_SIZE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Cache KeyCache Size in bytes",
+    "displayName": "KeyCache Size",
+    "displayNameShort": "KeyCache Size",
+    "unit": "bytecount"
   },
-  "KAFKA_MAX_LAG_SIZE": {
-    "displayName": "Maximum started instances",
-    "description": "The maximum number of instances started.",
-    "unit": "number",
-    "displayNameShort": "OS INST MAX",
-    "defaultResolutionMS": 0,
-    "isDisabled": 0,
-    "defaultAggregate": "avg"
+  "CASSANDRA_CACHE_KEYCACHE_CAPACITY": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Cache KeyCache Capacity in bytes",
+    "displayName": "KeyCache Capacity",
+    "displayNameShort": "KeyCache Capacity",
+    "unit": "bytecount"
+  },
+  "CASSANDRA_CACHE_ROWCACHE_HITRATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Cache RowCache Hit Rate",
+    "displayName": "RowCache Hit Rate",
+    "displayNameShort": "RowCache Hit Rate",
+    "unit": "number"
+  },
+  "CASSANDRA_CACHE_ROWCACHE_REQUESTS_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Cache RowCache Requests Rate",
+    "displayName": "RowCache Request Rate",
+    "displayNameShort": "RowCache Req. Rate",
+    "unit": "number"
+  },
+  "CASSANDRA_CACHE_ROWCACHE_ENTRIES": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Cache RowCache Entries",
+    "displayName": "RowCache Entries",
+    "displayNameShort": "RowCache Entries",
+    "unit": "number"
+  },
+  "CASSANDRA_CACHE_ROWCACHE_SIZE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Cache RowCache Size in bytes",
+    "displayName": "RowCache Size",
+    "displayNameShort": "RowCache Size",
+    "unit": "bytecount"
+  },
+  "CASSANDRA_CACHE_ROWCACHE_CAPACITY": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Cache RowCache Capacity in bytes",
+    "displayName": "RowCache Capacity",
+    "displayNameShort": "RowCache Capacity",
+    "unit": "bytecount"
+  },
+  "CASSANDRA_CACHE_COUNTERCACHE_HITRATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Cache CounterCache Hit Rate",
+    "displayName": "CounterCache Hit Rate",
+    "displayNameShort": "CounterCache Hit Rate",
+    "unit": "number"
+  },
+  "CASSANDRA_CACHE_COUNTERCACHE_REQUESTS_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Cache CounterCache Requests Rate",
+    "displayName": "CounterCache Request Rate",
+    "displayNameShort": "CounterCache Req. Rate",
+    "unit": "number"
+  },
+  "CASSANDRA_CACHE_COUNTERCACHE_ENTRIES": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Cache CounterCache Entries",
+    "displayName": "CounterCache Entries",
+    "displayNameShort": "CounterCache Entries",
+    "unit": "number"
+  },
+  "CASSANDRA_CACHE_COUNTERCACHE_SIZE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Cache CounterCache Size",
+    "displayName": "CounterCache Size",
+    "displayNameShort": "CounterCache Size",
+    "unit": "bytecount"
+  },
+  "CASSANDRA_CACHE_COUNTERCACHE_CAPACITY": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Cache CounterCache Capacity",
+    "displayName": "CounterCache Capacity",
+    "displayNameShort": "CounterCache Capacity",
+    "unit": "bytecount"
+  },
+  "CASSANDRA_HEAPMEMORY_USED": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Heap Memory Used",
+    "displayName": "Heap Memory Used",
+    "displayNameShort": "Heap Memory Used",
+    "unit": "bytecount"
+  },
+  "CASSANDRA_WRITE_LATENCY_MEAN": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Write Latency Mean",
+    "displayName": "Write Latency Mean",
+    "displayNameShort": "Write Latency",
+    "unit": "duration"
+  },
+  "CASSANDRA_WRITE_FAILURES_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Write Failures Rate",
+    "displayName": "Write Failures Rate",
+    "displayNameShort": "Write Failures",
+    "unit": "number"
+  },
+  "CASSANDRA_WRITE_TIMEOUTS_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Write Timeouts Rate",
+    "displayName": "Write Timeouts Rate",
+    "displayNameShort": "Write Timeouts",
+    "unit": "number"
+  },
+  "CASSANDRA_READ_LATENCY_MEAN": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Read Latency Mean",
+    "displayName": "Read Latency Mean",
+    "displayNameShort": "Read Latency",
+    "unit": "duration"
+  },
+  "CASSANDRA_READ_FAILURES_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Read Failures Rate",
+    "displayName": "Read Failures Rate",
+    "displayNameShort": "Read Failures",
+    "unit": "number"
+  },
+  "CASSANDRA_READ_TIMEOUTS_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Read Timeouts Rate",
+    "displayName": "Read Timeouts Rate",
+    "displayNameShort": "Read Timeouts",
+    "unit": "number"
+  },
+  "CASSANDRA_CLIENT_CONNECTED_THRIFT_CLIENTS": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Clients Connected Thrift",
+    "displayName": "Clients Connected Thrift",
+    "displayNameShort": "Clients Conn. Thrift",
+    "unit": "number"
+  },
+  "CASSANDRA_CLIENT_CONNECTED_NATIVE_CLIENTS": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Clients Connected Native",
+    "displayName": "Clients Connected Native",
+    "displayNameShort": "Clients Conn. Native",
+    "unit": "number"
+  },
+  "CASSANDRA_STORAGE_LOAD_BYTES": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Storage Load Bytes",
+    "displayName": "Storage Load Bytes",
+    "displayNameShort": "Storage Load",
+    "unit": "bytecount"
+  },
+  "CASSANDRA_STORAGE_COMMITLOG_SIZE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Cassandra - Storage Commitlog Size",
+    "displayName": "Storage Commitlog Size",
+    "displayNameShort": "Storage Commitlog",
+    "unit": "bytecount"
   }
+
 }
