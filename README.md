@@ -51,9 +51,15 @@ $ JMX_PORT=9990 ./bin/kafka-server-start.sh config/server.properties
 | KAFKA_UNDER_REPLICATED_PARTITIONS | |
 | KAFKA_LEADER_ELECTION_RATE | Leader election rate. |
 | KAFKA_ISR_SHRINK_RATE | If a brokers goes down, ISR for some of the partitions will shrink. |
-| KAFKA_IS_EXPASION_RATE | |
+| KAFKA_ISR_EXPANSION_RATE | Number of ISR expansions per second. |
 | KAFKA_MAX_LAG_MESSAGES_FOLLOWER_AND_REPLICAS |
 | KAFKA_REQUESTS_WAITING_PRODUCER_PURGATORY | Number of request waiting in the producer purgatory |
+| KAFKA_PARTITION_COUNT | Number of partitions. |
+| KAFKA_LEADER_COUNT | Number of leaders. |
+| KAFKA_PRODUCER_REQUEST_PURGATORY_SIZE | Size of the Producer's request purgatory. |
+| KAFKA_FETCH_REQUEST_PURGATORY_SIZE | Size of the Fetch's purgatory. |
+| KAFKA_FETCH_REQUEST_EXPIRATION_RATE | Expiration rate for fetch requests. |
+| KAFKA_PRODUCER_REQUEST_EXPIRATION_RATE | Expiration rateo for producer requests. | 
 | KAFKA_REQUESTS_WAITING_FETCH_PURGATORY | Number of requests waiting in the fetch purgatory |
 | KAFKA_PRODUCER_REQUEST_TOTAL_TIME | Total time of Producers requests. |
 | KAFKA_CONSUMER_REQUEST_TOTAL_TIME | Total time of Fetch Consumers requests. |
