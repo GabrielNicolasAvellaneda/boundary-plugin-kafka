@@ -87,7 +87,7 @@ $ JMX_PORT=9990 ./bin/kafka-server-start.sh config/server.properties
 
 ### Dashboards
 
-- Kafka
+- Kafka General
 
 ### References
 

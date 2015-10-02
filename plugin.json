@@ -36,8 +36,8 @@
 
     "dashboards" : [ 
     	{
-	    "name": "Kafka",
-	    "layout" : "d-w=1&d-h=1&d-pad=5&d-light=0&d-bg=none&d-g-KAFKA_JVM_HEAPMEMORY_USED=0-0-1-1"
+	    "name": "Kafka General",
+	    "layout" : "d-w=3&d-h=3&d-pad=5&d-light=0&d-bg=none&d-g-KAFKA_ISR_EXPAND_RATE=1-1-1-1-t&d-g-KAFKA_ISR_SHRINK_RATE=1-1-1-1-b&d-g-KAFKA_JVM_HEAPMEMORY_USED=0-0-1-1&d-g-KAFKA_TOPIC_BYTE_IN_RATE=2-1-1-1-t&d-g-KAFKA_TOPIC_BYTE_OUT_RATE=2-1-1-1-b&d-g-KAFKA_NETWORK_PROCESSOR_IDLE_TIME=1-0-1-1&d-g-KAFKA_REQUEST_HANDLER_THREADS_IDLE_TIME=2-0-1-1&d-g-KAFKA_FOLLOW_REQUEST_RATE=2-2-1-1&d-g-KAFKA_CONSUME_REQUEST_RATE=1-2-1-1&d-g-KAFKA_PRODUCE_REQUEST_RATE=0-2-1-1&d-g-KAFKA_TOPIC_MESSAGE_IN_RATE=0-1-1-1"
 	}
     ],
 
