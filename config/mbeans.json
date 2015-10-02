@@ -6,7 +6,7 @@
        	{
           "attribute": "HeapMemoryUsage",
           "dataType": "javax.management.openmbean.CompositeData",
-          "metricName": "KAFKA_HEAPMEMORY_USED",
+          "metricName": "KAFKA_JVM_HEAPMEMORY_USED",
           "key": "used",
           "metricType": "standard",
           "scale": 1,
