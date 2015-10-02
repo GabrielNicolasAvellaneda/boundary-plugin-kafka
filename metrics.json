@@ -7,7 +7,7 @@
     "displayNameShort": "Heap Memory Used",
     "unit": "bytecount"
   },
-  "KAFKA_TOPICS_MESSAGES_IN_RATE": {
+  "KAFKA_TOPIC_MESSAGE_IN_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Kafka - Topics Messages In Rate",
@@ -15,7 +15,7 @@
     "displayNameShort": "Messages In Rate",
     "unit": "number"
   },
-  "KAFKA_TOPICS_BYTES_IN_RATE": {
+  "KAFKA_TOPIC_BYTE_IN_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Kafka - Topics Bytes In Rate",
@@ -23,7 +23,7 @@
     "displayNameShort": "Topics Bytes In Rate",
     "unit": "bytecount"
   },
-  "KAFKA_TOPICS_BYTES_OUT_RATE": {
+  "KAFKA_TOPIC_BYTE_OUT_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Kafka - Topics Bytes Out Rate",
@@ -31,7 +31,7 @@
     "displayNameShort": "Topics Bytes Out Rate",
     "unit": "bytecount"
   },
-  "KAFKA_PRODUCERS_REQUESTS_RATE": {
+  "KAFKA_PRODUCE_REQUEST_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Kafka - Producers Requests Rate",
@@ -39,7 +39,7 @@
     "displayNameShort": "Producers Requests Rate",
     "unit": "number"
   },
-  "KAFKA_CONSUMERS_REQUESTS_RATE": {
+  "KAFKA_CONSUME_REQUEST_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Kafka - Consumers Requests Rate",
@@ -47,14 +47,108 @@
     "displayNameShort": "Consumers Requests Rate",
     "unit": "number"
   },
-
-  "KAFKA_PRODUCERS_REQUESTS_RATE": {
+  "KAFKA_FOLLOW_REQUEST_RATE": {
     "defaultAggregate": "max",
     "defaultResolutionMS": 1000,
     "description": "Kafka - Followers Requests Rate",
     "displayName": "Followers Requests Rate",
     "displayNameShort": "Followers Requests Rate",
     "unit": "number"
+  },
+  "KAFKA_PRODUCE_REQUEST_FAILS": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Producer Failed Requests",
+    "displayName": "Producer Failed Requests",
+    "displayNameShort": "Producer Failed Requests",
+    "unit": "number"
+  },
+  "KAFKA_FETCH_REQUEST_FAILS": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Fetch Failed Requests (Consumers and Followers)",
+    "displayName": "Fetch Failed Requests",
+    "displayNameShort": "Fetch Failed Requests",
+    "unit": "number"
+  },
+  "KAFKA_ISR_EXPAND_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - ISR Expand Rate",
+    "displayName": "ISR Expand Rate",
+    "displayNameShort": "ISR Expand Rate",
+    "unit": "number"
+  },
+  "KAFKA_ISR_SHRINK_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - ISR Shrink Rate",
+    "displayName": "ISR Shrink Rate",
+    "displayNameShort": "ISR Shrink Rate",
+    "unit": "number"
+  },
+  "KAFKA_PRODUCE_REQUEST_TOTAL_TIME": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Producer Requests Total Time",
+    "displayName": "Producer Requests Total Time",
+    "displayNameShort": "Producer Requests Total Time",
+    "unit": "duration"
+  },
+  "KAFKA_CONSUME_REQUEST_TOTAL_TIME": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Conumer Fetch Requests Total Time",
+    "displayName": "Consumer Request Total Time",
+    "displayNameShort": "Consumer Request Total Time",
+    "unit": "duration"
+  },
+  "KAFKA_FOLLOW_REQUEST_TOTAL_TIME": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Followers Fetch Requests Total Time",
+    "displayName": "Follower Request Total Time",
+    "displayNameShort": "Follower Request Total Time",
+    "unit": "duration"
+  },
+  "KAFKA_PRODUCE_REQUEST_RESPONSE_TIME": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Producer Requests Response Time",
+    "displayName": "Producer Response Time",
+    "displayNameShort": "Producer Response Time",
+    "unit": "duration"
+  },
+  "KAFKA_CONSUME_REQUEST_RESPONSE_TIME": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Consumer Requests Response Time",
+    "displayName": "Consumer Response Time",
+    "displayNameShort": "Consumer Response Time",
+    "unit": "duration"
+  },
+  "KAFKA_FOLLOW_REQUEST_RESPONSE_TIME": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Follower Requests Response Time",
+    "displayName": "Follower Response Time",
+    "displayNameShort": "Follower Response Time",
+    "unit": "duration"
+  },
+  "KAFKA_NETWORK_PROCESSOR_IDLE_TIME": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Network Processor Idle Time",
+    "displayName": "Network Processor Idle Time",
+    "displayNameShort": "Network Processor Idle Time",
+    "unit": "percent"
+  },
+  "KAFKA_REQUEST_HANDLER_THREADS_IDLE_TIME": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Request Handler Threads Idle Time",
+    "displayName": "Request Handler Idle Time",
+    "displayNameShort": "Request Handler Idle Time",
+    "unit": "percent"
   }
-
 }

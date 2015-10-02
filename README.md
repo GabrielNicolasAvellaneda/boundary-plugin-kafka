@@ -42,17 +42,29 @@ $ JMX_PORT=9990 ./bin/kafka-server-start.sh config/server.properties
 |Metric Name                                   |Description                                                               |
 |:---------------------------------------------|:-------------------------------------------------------------------------|
 | KAFKA_JVM_HEAPMEMORY_USED | Heap Memory Used by the JVM. |
-| KAFKA_TOPICS_MESSAGES_IN_RATE | Number of Message in per second. |
-| KAFKA_TOPICS_BYTES_IN_RATE | Number of Bytes in per second. | 
-| KAFKA_TOPICS_BYTES_OUT_RATE | Number of Bytes out per second. |
-| KAFKA_PRODUCERS_REQUESTS_RATE | Number of Requests by Producers per second. |
-| KAFKA_CONSUMERS_REQUESTS_RATE | Number of requests by Fetch Consumers per second. |
-| KAFKA_FOLLOWERS_REQUESTS_RATE | Number of requests by Fetch Followers per second. |
+| KAFKA_TOPIC_MESSAGE_IN_RATE | Number of Message In on Topics per second. |
+| KAFKA_TOPIC_BYTE_IN_RATE | Number of Bytes In on Topics per second. | 
+| KAFKA_TOPIC_BYTE_OUT_RATE | Number of Bytes Out from Topics per second. | 
+| KAFKA_PRODUCE_REQUEST_RATE | Number of Requests by Producers per second. |
+| KAFKA_CONSUME_REQUEST_RATE | Number of requests by Fetch Consumers per second. |
+| KAFKA_FOLLOW_REQUEST_RATE | Number of requests by Fetch Followers per second. |
+| KAFKA_PRODUCE_REQUEST_FAILS | Total number of failed Produce Requests.| 
+| KAFKA_FETCH_REQUEST_FAILS | Total number of failed Fetch Requests. |
+| KAFKA_ISR_SHRINK_RATE | If a brokers goes down, ISR for some of the partitions will shrink. |
+| KAFKA_ISR_EXPAND_RATE | Number of ISR expansions per second. |
+| KAFKA_PRODUCE_REQUEST_TOTAL_TIME | Total time of Producers requests. |
+| KAFKA_CONSUME_REQUEST_TOTAL_TIME | Total time of Fetch Consumers requests. |
+| KAFKA_FOLLOW_REQUEST_TOTAL_TIME | Total time of Fetch Followers requests. |
+| KAFKA_PRODUCE_REQUEST_RESPONSE_TIME | Total time to send the response to the Producer. |
+| KAFKA_CONSUME_REQUEST_RESPONSE_TIME | Total time to send the response to a Consumer. |
+| KAFKA_FOLLOW_REQUEST_RESPONSE_TIME | Total time to send the reponse to a Follower. |
+| KAFKA_NETWORK_PROCESSOR_IDLE_TIME | The average fraction of time the network processors are idle. |
+| KAFKA_REQUEST_HANDLER_THREADS_IDLE_TIME | The average fraction of time the request handler threads are idle. |  
+ 
+| KAFKA_MESSAGE_CONSUMER_LAG | Number of messages the consumer lags abehind the producer by. |
 | KAFKA_LOG_FLUSH_RATE_AND_TIME | Log flush rate. |  
 | KAFKA_UNDER_REPLICATED_PARTITIONS | |
 | KAFKA_LEADER_ELECTION_RATE | Leader election rate. |
-| KAFKA_ISR_SHRINK_RATE | If a brokers goes down, ISR for some of the partitions will shrink. |
-| KAFKA_ISR_EXPANSION_RATE | Number of ISR expansions per second. |
 | KAFKA_MAX_LAG_MESSAGES_FOLLOWER_AND_REPLICAS |
 | KAFKA_REQUESTS_WAITING_PRODUCER_PURGATORY | Number of request waiting in the producer purgatory |
 | KAFKA_PARTITION_COUNT | Number of partitions. |
@@ -60,12 +72,9 @@ $ JMX_PORT=9990 ./bin/kafka-server-start.sh config/server.properties
 | KAFKA_PRODUCER_REQUEST_PURGATORY_SIZE | Size of the Producer's request purgatory. |
 | KAFKA_FETCH_REQUEST_PURGATORY_SIZE | Size of the Fetch's purgatory. |
 | KAFKA_FETCH_REQUEST_EXPIRATION_RATE | Expiration rate for fetch requests. |
-| KAFKA_PRODUCER_REQUEST_EXPIRATION_RATE | Expiration rateo for producer requests. | 
+| KAFKA_PRODUCER_REQUEST_EXPIRATION_RATE | Expiration rate for producer requests. | 
 | KAFKA_REQUESTS_WAITING_FETCH_PURGATORY | Number of requests waiting in the fetch purgatory |
-| KAFKA_PRODUCER_REQUEST_TOTAL_TIME | Total time of Producers requests. |
-| KAFKA_CONSUMER_REQUEST_TOTAL_TIME | Total time of Fetch Consumers requests. |
-| KAFKA_FOLLOWER_REQUEST_TOTAL_TIME | Total time of Fetch Followers requests. |
-| KAFKA_PRODUCER_REQUEST_QUEUE_TOTAL_TIME | Total time of Producer requests waiting in the Request Queue. |
+ KAFKA_PRODUCER_REQUEST_QUEUE_TOTAL_TIME | Total time of Producer requests waiting in the Request Queue. |
 | KAFKA_CONSUMER_REQUEST_QUEUE_TOTAL_TIME | Total time of Fetch Consumers requests waiting in the Request Queue. |
 | KAFKA_FOLLOWER_REQUEST_QUEUE_TOTAL_TIME | Total time of Fetch Followers requests waiting in the Request Queue. |
 | KAFKA_PRODUCER_REQUEST_LEADER_TOTAL_TIME | Total time of Producer's requests processed at the leader. |
@@ -74,13 +83,8 @@ $ JMX_PORT=9990 ./bin/kafka-server-start.sh config/server.properties
 | KAFKA_PRODUCER_REQUEST_FOLLOWER_TOTAL_TIME | Total time of Producer's requests waiting for the follower. |
 | KAFKA_CONSUMER_REQUEST_FOLLOWER_TOTAL_TIME | Total time of Consumer's requests wiating for the follower. |
 | KAFKA_FOLLOWER_REQUEST_FOLLOWER_TOTAL_TIME | Total time of Follower's requests waiting ofr the follower. |
-| KAFKA_PRODUCER_RESPONSE_TOTAL_TIME | Total time to send the response to the Producer. |
-| KAFKA_CONSUMER_RESPONSE_TOTAL_TIME | Total time to send the response to the Consumer. |
-| KAFKA_FOLLOWER_RESPONSE_TOTAL_TIME | Total time to send the reponse to the Follower. |
 | KAFKA_MESSAGE_CONSUMER_LAG | Number of messages the consumer lags abehind the producer by. |
-| KAFKA_NETWORK_PROCESSOR_IDLE_TIME | The average fraction of time the network processors are idle. |
-| KAFKA_REQUEST_HANDLE_THREADS_IDLE_TIME | The average fraction of time the request handler threads are idle. |  
- 
+
 ### Dashboards
 
 - Kafka
