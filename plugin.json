@@ -13,7 +13,7 @@
     "icon" : "icon.png",
     "metrics" : [
 
-        "KAFKA_JVM_HEAPMEMORY_USED",
+        "KAFKA_JVM_HEAPMEMORY_USED"
     ],
 
     "dashboards" : [ 
