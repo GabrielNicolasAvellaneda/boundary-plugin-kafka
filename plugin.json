@@ -19,7 +19,7 @@
     "dashboards" : [ 
     	{
 	    "name": "Kafka",
-	    "layout" : ""
+	    "layout" : "d-w=1&d-h=1&d-pad=5&d-light=0&d-bg=none&d-g-KAFKA_JVM_HEAPMEMORY_USED=0-0-1-1"
 	}
     ],
 
