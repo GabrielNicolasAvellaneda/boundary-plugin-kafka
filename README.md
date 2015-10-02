@@ -30,7 +30,7 @@ $ JMX_PORT=9990 ./bin/kafka-server-start.sh config/server.properties
 |Field Name    | Description                                                                                              |
 |:-------------|:---------------------------------------------------------------------------------------------------------|
 | Host          | Host of the Kafka JMX endpoint.                |
-| Port          | Port of the Kafka JMX endpoint. Defaults to 7199.         |
+| Port          | Port of the Kafka JMX endpoint. Defaults to 9990.         |
 | Username      | Username of the Kafka JMX endpoint. |
 | Password      | Password of the Kafka JMX endpoint. |
 | Source        | The Source to display in the legend for the metrics data.  It will default to the hostname of the server.|
@@ -41,13 +41,14 @@ $ JMX_PORT=9990 ./bin/kafka-server-start.sh config/server.properties
 
 |Metric Name                                   |Description                                                               |
 |:---------------------------------------------|:-------------------------------------------------------------------------|
-| KAFKA_MESSAGE_IN_RATE | Number of Message in per second. |
-| KAFKA_BYTES_IN_RATE | Number of Bytes in per second. | 
-| KAFKA_PRODUCER_REQUESTS_RATE | Number of Requests by Producers per second. |
-| KAFKA_CONSUMER_REQUESTS_RATE | Number of requests by Fetch Consumers per second. |
-| KAFKA_FOLLOWER_REQUESTS_RATE | Number of requests by FetchFollowers per second. |
-| KAFKA_BYTES_OUT_RATE | Number of Bytes out per second. |
-| KAFKA__LOG_FLUSH_RATE_AND_TIME | Log flush rate. |  
+| KAFKA_JVM_HEAPMEMORY_USED | Heap Memory Used by the JVM. |
+| KAFKA_TOPICS_MESSAGES_IN_RATE | Number of Message in per second. |
+| KAFKA_TOPICS_BYTES_IN_RATE | Number of Bytes in per second. | 
+| KAFKA_TOPICS_BYTES_OUT_RATE | Number of Bytes out per second. |
+| KAFKA_PRODUCERS_REQUESTS_RATE | Number of Requests by Producers per second. |
+| KAFKA_CONSUMERS_REQUESTS_RATE | Number of requests by Fetch Consumers per second. |
+| KAFKA_FOLLOWERS_REQUESTS_RATE | Number of requests by Fetch Followers per second. |
+| KAFKA_LOG_FLUSH_RATE_AND_TIME | Log flush rate. |  
 | KAFKA_UNDER_REPLICATED_PARTITIONS | |
 | KAFKA_LEADER_ELECTION_RATE | Leader election rate. |
 | KAFKA_ISR_SHRINK_RATE | If a brokers goes down, ISR for some of the partitions will shrink. |

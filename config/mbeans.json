@@ -14,6 +14,96 @@
         }
         ],
       "enabled": true
+    },
+    {
+      "mbean": "kafka.server:type=BrokerTopicMetrics,name=MessagesInPerSec",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "KAFKA_TOPICS_MESSAGES_IN_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.server:type=BrokerTopicMetrics,name=BytesInPerSec",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "KAFKA_TOPICS_BYTES_IN_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.server:type=BrokerTopicMetrics,name=BytesOutPerSec",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "KAFKA_TOPICS_BYTES_OUT_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.network:type=RequestMetrics,name=RequestsPerSec,request=Produce",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "KAFKA_PRODUCERS_REQUESTS_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.network:type=RequestMetrics,name=RequestsPerSec,request=FetchConsumer",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "KAFKA_CONSUMERS_REQUESTS_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.network:type=RequestMetrics,name=RequestsPerSec,request=FetchFollower",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "KAFKA_FOLLOWERS_REQUESTS_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
     }
   ]
 }

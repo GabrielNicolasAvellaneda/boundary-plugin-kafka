@@ -6,5 +6,55 @@
     "displayName": "Heap Memory Used",
     "displayNameShort": "Heap Memory Used",
     "unit": "bytecount"
+  },
+  "KAFKA_TOPICS_MESSAGES_IN_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Topics Messages In Rate",
+    "displayName": "Topics Messages In Rate",
+    "displayNameShort": "Messages In Rate",
+    "unit": "number"
+  },
+  "KAFKA_TOPICS_BYTES_IN_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Topics Bytes In Rate",
+    "displayName": "Topics Bytes In Rate",
+    "displayNameShort": "Topics Bytes In Rate",
+    "unit": "bytecount"
+  },
+  "KAFKA_TOPICS_BYTES_OUT_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Topics Bytes Out Rate",
+    "displayName": "Topics Bytes Out Rate",
+    "displayNameShort": "Topics Bytes Out Rate",
+    "unit": "bytecount"
+  },
+  "KAFKA_PRODUCERS_REQUESTS_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Producers Requests Rate",
+    "displayName": "Producers Requests Rate",
+    "displayNameShort": "Producers Requests Rate",
+    "unit": "number"
+  },
+  "KAFKA_CONSUMERS_REQUESTS_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Consumers Requests Rate",
+    "displayName": "Consumers Requests Rate",
+    "displayNameShort": "Consumers Requests Rate",
+    "unit": "number"
+  },
+
+  "KAFKA_PRODUCERS_REQUESTS_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Followers Requests Rate",
+    "displayName": "Followers Requests Rate",
+    "displayNameShort": "Followers Requests Rate",
+    "unit": "number"
   }
+
 }

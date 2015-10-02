@@ -13,7 +13,13 @@
     "icon" : "icon.png",
     "metrics" : [
 
-        "KAFKA_JVM_HEAPMEMORY_USED"
+        "KAFKA_JVM_HEAPMEMORY_USED",
+    	"KAFKA_TOPICS_MESSAGES_IN_RATE",
+	"KAFKA_TOPICS_BYTES_IN_RATE",
+	"KAFKA_TOPICS_BYTES_OUT_RATE",
+	"KAFKA_PRODUCERS_REQUESTS_RATE",
+	"KAFKA_CONSUMERS_REQUESTS_RATE",
+	"KAFKA_FOLLOWERS_REQUESTS_RATE"
     ],
 
     "dashboards" : [ 
@@ -36,7 +42,7 @@
         "name": "name",
         "description": "A name to identify the Kafka instance.",
         "type": "string",
-        "default": "cassandra",
+        "default": "kafka",
         "required": true
     },
     {

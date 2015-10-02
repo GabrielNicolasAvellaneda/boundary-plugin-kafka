@@ -7,8 +7,7 @@ public class Kafka extends JMXPlugin {
 
     public static void main(String[] args) {
         
-        //PluginRunner plugin = new PluginRunner(Kafka.class.getName());                
-        PluginRunner plugin = new PluginRunner("com.boundary.plugin.sdk.jmx.JMXPlugin");
+        PluginRunner plugin = new PluginRunner(Kafka.class.getName());                
         plugin.run();
     }
 
