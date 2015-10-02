@@ -18,7 +18,7 @@ Collects metrics from a Kafka broker
 
 ### Plugin Setup
 
-To collect statistics from a Kafka broker, you need to enable access to the JMX remote endpoint. For this run the server specifiying the JMX_PORT as for example:
+To collect statistics from a Kafka broker you need to enable access to the JMX remote endpoint. For this, run the server specifying the JMX_PORT such as for example:
 
 ```
 $ JMX_PORT=9990 ./bin/kafka-server-start.sh config/server.properties
@@ -60,7 +60,6 @@ $ JMX_PORT=9990 ./bin/kafka-server-start.sh config/server.properties
 | KAFKA_FOLLOW_REQUEST_RESPONSE_TIME | Total time to send the reponse to a Follower. |
 | KAFKA_NETWORK_PROCESSOR_IDLE_TIME | The average fraction of time the network processors are idle. |
 | KAFKA_REQUEST_HANDLER_THREADS_IDLE_TIME | The average fraction of time the request handler threads are idle. |  
- 
 | KAFKA_MESSAGE_CONSUMER_LAG | Number of messages the consumer lags abehind the producer by. |
 | KAFKA_LOG_FLUSH_RATE_AND_TIME | Log flush rate. |  
 | KAFKA_UNDER_REPLICATED_PARTITIONS | |
@@ -74,7 +73,7 @@ $ JMX_PORT=9990 ./bin/kafka-server-start.sh config/server.properties
 | KAFKA_FETCH_REQUEST_EXPIRATION_RATE | Expiration rate for fetch requests. |
 | KAFKA_PRODUCER_REQUEST_EXPIRATION_RATE | Expiration rate for producer requests. | 
 | KAFKA_REQUESTS_WAITING_FETCH_PURGATORY | Number of requests waiting in the fetch purgatory |
- KAFKA_PRODUCER_REQUEST_QUEUE_TOTAL_TIME | Total time of Producer requests waiting in the Request Queue. |
+| KAFKA_PRODUCER_REQUEST_QUEUE_TOTAL_TIME | Total time of Producer requests waiting in the Request Queue. |
 | KAFKA_CONSUMER_REQUEST_QUEUE_TOTAL_TIME | Total time of Fetch Consumers requests waiting in the Request Queue. |
 | KAFKA_FOLLOWER_REQUEST_QUEUE_TOTAL_TIME | Total time of Fetch Followers requests waiting in the Request Queue. |
 | KAFKA_PRODUCER_REQUEST_LEADER_TOTAL_TIME | Total time of Producer's requests processed at the leader. |
