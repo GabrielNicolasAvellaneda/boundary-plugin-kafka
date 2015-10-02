@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.boundary</groupId>
+  <artifactId>java-plugin-sdk</artifactId>
+  <version>0.6.2</version>
+  <versioning>
+    <versions>
+      <version>0.6.2</version>
+    </versions>
+    <lastUpdated>20151001202448</lastUpdated>
+  </versioning>
+</metadata>

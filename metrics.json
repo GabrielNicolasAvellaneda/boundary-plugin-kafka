@@ -1,74 +1,154 @@
 {
-  "KAFKA_BYTES_OUT_PER_SEC" : {
-    "displayName": "Kafka Bytes De-Queued Per Secon",
-    "description": "The number of bytes being read out of the Kafka queues per second",
-    "unit": "number",
-    "displayNameShort": "Kafka BOPS",
-    "defaultResolutionMS": 0,
-    "isDisabled": 0,
-    "defaultAggregate": "avg"
+  "KAFKA_JVM_HEAPMEMORY_USED": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Heap Memory Used",
+    "displayName": "Heap Memory Used",
+    "displayNameShort": "Heap Memory Used",
+    "unit": "bytecount"
   },
-  "KAFKA_ISR_EXPANDS_PER_SEC" : {
-    "displayName": "Kafka ISR Growth per Second",
-    "description": "The number of in-sync-replica expand calls per second",
-    "unit": "number",
-    "displayNameShort": "Kafka ISR Growth",
-    "defaultResolutionMS": 0,
-    "isDisabled": 0,
-    "defaultAggregate": "avg"
+  "KAFKA_TOPIC_MESSAGE_IN_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Topics Messages In Rate",
+    "displayName": "Topics Messages In Rate",
+    "displayNameShort": "Messages In Rate",
+    "unit": "number"
   },
-  "KAFKA_PARTITION_COUNT" : {
-    "displayName": "Number of Kafka Partitions",
-    "description": "The number of Kafka partitions being used",
-    "unit": "number",
-    "displayNameShort": "Kafka Partitions",
-    "defaultResolutionMS": 0,
-    "isDisabled": 0,
-    "defaultAggregate": "max"
+  "KAFKA_TOPIC_BYTE_IN_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Topics Bytes In Rate",
+    "displayName": "Topics Bytes In Rate",
+    "displayNameShort": "Topics Bytes In Rate",
+    "unit": "bytecount"
   },
-  "KAFKA_CONSUMER_EXPIRES_PER_SECOND" : {
-    "displayName": "Kafka Expires Per Second",
-    "description": "The number of Kafka consumers who have expired per second",
-    "unit": "number",
-    "displayNameShort": "Kafka Expires",
-    "defaultResolutionMS": 0,
-    "isDisabled": 0,
-    "defaultAggregate": "avg"
+  "KAFKA_TOPIC_BYTE_OUT_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Topics Bytes Out Rate",
+    "displayName": "Topics Bytes Out Rate",
+    "displayNameShort": "Topics Bytes Out Rate",
+    "unit": "bytecount"
   },
-  "KAFKA_LEADER_COUNT" : {
-    "displayName": "Kafka Leader Count",
-    "description": "The number of Kafka leaders maintaining the Kafka partitions",
-    "unit": "number",
-    "displayNameShort": "Kafka Leaders",
-    "defaultResolutionMS": 0,
-    "isDisabled": 0,
-    "defaultAggregate": "max"
+  "KAFKA_PRODUCE_REQUEST_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Producers Requests Rate",
+    "displayName": "Producers Requests Rate",
+    "displayNameShort": "Producers Requests Rate",
+    "unit": "number"
   },
-  "KAFKA_PURGATORY_SIZE" : {
-    "displayName": "Kafka Purgatory Size",
-    "description": "The size of the holding pen for requests waiting to be satisfied",
-    "unit": "number",
-    "displayNameShort": "Kafka Purgatory",
-    "defaultResolutionMS": 0,
-    "isDisabled": 0,
-    "defaultAggregate": "max"
+  "KAFKA_CONSUME_REQUEST_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Consumers Requests Rate",
+    "displayName": "Consumers Requests Rate",
+    "displayNameShort": "Consumers Requests Rate",
+    "unit": "number"
   },
-  "KAFKA_RESPONSE_QUEUE_SIZE" : {
-    "displayName": "Kafka Response Queue Size",
-    "description": "The length of the queue handling waiting for Kafka responses",
-    "unit": "number",
-    "displayNameShort": "Kafka Response Q",
-    "defaultResolutionMS": 0,
-    "isDisabled": 0,
-    "defaultAggregate": "avg"
+  "KAFKA_FOLLOW_REQUEST_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Followers Requests Rate",
+    "displayName": "Followers Requests Rate",
+    "displayNameShort": "Followers Requests Rate",
+    "unit": "number"
   },
-  "KAFKA_MAX_LAG_SIZE": {
-    "displayName": "Maximum started instances",
-    "description": "The maximum number of instances started.",
-    "unit": "number",
-    "displayNameShort": "OS INST MAX",
-    "defaultResolutionMS": 0,
-    "isDisabled": 0,
-    "defaultAggregate": "avg"
+  "KAFKA_PRODUCE_REQUEST_FAILS": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Producer Failed Requests",
+    "displayName": "Producer Failed Requests",
+    "displayNameShort": "Producer Failed Requests",
+    "unit": "number"
+  },
+  "KAFKA_FETCH_REQUEST_FAILS": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Fetch Failed Requests (Consumers and Followers)",
+    "displayName": "Fetch Failed Requests",
+    "displayNameShort": "Fetch Failed Requests",
+    "unit": "number"
+  },
+  "KAFKA_ISR_EXPAND_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - ISR Expand Rate",
+    "displayName": "ISR Expand Rate",
+    "displayNameShort": "ISR Expand Rate",
+    "unit": "number"
+  },
+  "KAFKA_ISR_SHRINK_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - ISR Shrink Rate",
+    "displayName": "ISR Shrink Rate",
+    "displayNameShort": "ISR Shrink Rate",
+    "unit": "number"
+  },
+  "KAFKA_PRODUCE_REQUEST_TOTAL_TIME": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Producer Requests Total Time",
+    "displayName": "Producer Requests Total Time",
+    "displayNameShort": "Producer Requests Total Time",
+    "unit": "duration"
+  },
+  "KAFKA_CONSUME_REQUEST_TOTAL_TIME": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Conumer Fetch Requests Total Time",
+    "displayName": "Consumer Request Total Time",
+    "displayNameShort": "Consumer Request Total Time",
+    "unit": "duration"
+  },
+  "KAFKA_FOLLOW_REQUEST_TOTAL_TIME": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Followers Fetch Requests Total Time",
+    "displayName": "Follower Request Total Time",
+    "displayNameShort": "Follower Request Total Time",
+    "unit": "duration"
+  },
+  "KAFKA_PRODUCE_REQUEST_RESPONSE_TIME": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Producer Requests Response Time",
+    "displayName": "Producer Response Time",
+    "displayNameShort": "Producer Response Time",
+    "unit": "duration"
+  },
+  "KAFKA_CONSUME_REQUEST_RESPONSE_TIME": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Consumer Requests Response Time",
+    "displayName": "Consumer Response Time",
+    "displayNameShort": "Consumer Response Time",
+    "unit": "duration"
+  },
+  "KAFKA_FOLLOW_REQUEST_RESPONSE_TIME": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Follower Requests Response Time",
+    "displayName": "Follower Response Time",
+    "displayNameShort": "Follower Response Time",
+    "unit": "duration"
+  },
+  "KAFKA_NETWORK_PROCESSOR_IDLE_TIME": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Network Processor Idle Time",
+    "displayName": "Network Processor Idle Time",
+    "displayNameShort": "Network Processor Idle Time",
+    "unit": "percent"
+  },
+  "KAFKA_REQUEST_HANDLER_THREADS_IDLE_TIME": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Request Handler Threads Idle Time",
+    "displayName": "Request Handler Idle Time",
+    "displayNameShort": "Request Handler Idle Time",
+    "unit": "percent"
   }
 }

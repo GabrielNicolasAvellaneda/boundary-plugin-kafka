@@ -1,29 +1,108 @@
 {
-    "description": "Boundary Kafka Plugin",
-    "icon" : "icon.png",
-    "command" : "boundary-meter init.lua",
-    "postInstall" : "",
-    "command_lua" : "boundary-meter init.lua",
-    "postInstall_lua" : "",
+    "name" : "TrueSight Pulse Kafka",
+    "version" : "0.9.0",
+    "meterVersionRequired" : "4.2.0-611",
+    "unsupportedPlatforms" : [ ],
+    "tags" : "kafka", 
+    "description": "Monitors Kafka",
+    "command_lua" : "",
+    "postExtract_lua" : "",
+    "command": "java -jar target/kafka-plugin-0.9.0-full.jar",
+    "postExtract" : "",
     "ignore" : "",
-
+    "icon" : "icon.png",
     "metrics" : [
-        "KAFKA_BYTES_OUT_PER_SEC",
-        "KAFKA_ISR_EXPANDS_PER_SEC",
-        "KAFKA_PARTITION_COUNT",
-        "KAFKA_CONSUMER_EXPIRES_PER_SECOND",
-        "KAFKA_LEADER_COUNT",
-        "KAFKA_PURGATORY_SIZE",
-        "KAFKA_RESPONSE_QUEUE_SIZE",
-        "KAFKA_MAX_LAG_SIZE"
+
+        "KAFKA_JVM_HEAPMEMORY_USED",
+    	"KAFKA_TOPIC_MESSAGE_IN_RATE",
+	"KAFKA_TOPIC_BYTE_IN_RATE",
+	"KAFKA_TOPIC_BYTE_OUT_RATE",
+	"KAFKA_PRODUCE_REQUEST_RATE",
+	"KAFKA_CONSUME_REQUEST_RATE",
+	"KAFKA_FOLLOW_REQUEST_RATE",
+	"KAFKA_PRODUCE_REQUEST_FAILS",
+	"KAFKA_FETCH_REQUEST_FAILS",
+	"KAFKA_ISR_EXPAND_RATE",
+	"KAFKA_ISR_SHRINK_RATE",
+	"KAFKA_PRODUCE_REQUEST_TOTAL_TIME",
+	"KAFKA_CONSUME_REQUEST_TOTAL_TIME",
+	"KAFKA_FOLLOW_REQUEST_TOTAL_TIME",
+	"KAFKA_PRODUCE_REQUEST_RESPONSE_TIME",
+	"KAFKA_CONSUME_REQUEST_RESPONSE_TIME",
+	"KAFKA_FOLLOW_REQUEST_RESPONSE_TIME",
+	"KAFKA_NETWORK_PROCESSOR_IDLE_TIME",
+	"KAFKA_REQUEST_HANDLER_THREADS_IDLE_TIME"
     ],
 
-    "paramSchema" : [
-        {
-            "title" : "Path",
-            "name" : "path",
-            "description" : "The path to the metrics directory",
-            "type" : "string"
-        }
-    ]
+    "dashboards" : [ 
+    	{
+	    "name": "Kafka General",
+	    "layout" : "d-w=3&d-h=3&d-pad=5&d-light=0&d-bg=none&d-g-KAFKA_ISR_EXPAND_RATE=1-1-1-1-t&d-g-KAFKA_ISR_SHRINK_RATE=1-1-1-1-b&d-g-KAFKA_JVM_HEAPMEMORY_USED=0-0-1-1&d-g-KAFKA_TOPIC_BYTE_IN_RATE=2-1-1-1-t&d-g-KAFKA_TOPIC_BYTE_OUT_RATE=2-1-1-1-b&d-g-KAFKA_NETWORK_PROCESSOR_IDLE_TIME=1-0-1-1&d-g-KAFKA_REQUEST_HANDLER_THREADS_IDLE_TIME=2-0-1-1&d-g-KAFKA_FOLLOW_REQUEST_RATE=2-2-1-1&d-g-KAFKA_CONSUME_REQUEST_RATE=1-2-1-1&d-g-KAFKA_PRODUCE_REQUEST_RATE=0-2-1-1&d-g-KAFKA_TOPIC_MESSAGE_IN_RATE=0-1-1-1"
+	}
+    ],
+
+    "paramArray": {
+        "itemTitle": [
+        "host","port", "source"
+        ],
+        "schemaTitle": "Instance"
+    },
+
+    "paramSchema": [
+    {
+        "title": "Name",
+        "name": "name",
+        "description": "A name to identify the Kafka instance.",
+        "type": "string",
+        "default": "kafka",
+        "required": true
+    },
+    {
+        "title": "Host",
+        "name": "host",
+        "description": "The host of Kafka JMX endpoint",
+        "type": "string",
+        "default": "127.0.0.1",
+        "required": true
+    },
+    {
+        "title": "Port",
+        "name" : "port",
+        "description": "The port of Kafka JMX endpoint",
+        "type" : "integer",
+        "default": 9990,
+        "required" : true
+    },
+    {
+        "title" : "User",
+        "name" : "user",
+        "description": "The user of Cassandra JMX endpoint",
+        "type" : "string",
+        "default" : "",
+        "required": false
+    },
+    {   
+        "title" : "Password",
+        "name" : "password",
+        "description" : "The password of Kafka JMX endpoint",
+        "default" : "",
+        "type" : "password",
+        "required" : false
+    },
+    {
+        "title": "Poll Interval (ms)",
+        "name": "pollInterval",
+        "description": "How often (in milliseconds) to poll for metrics.",
+        "type" : "integer",
+        "default" : 1000,
+        "required" : true
+    },
+    {
+        "title" : "Source",
+        "name" : "source",
+        "description" : "The Source to display in the legend for the metrics data.  It will default to the hostname of the server",
+        "type" : "string",
+        "default" : "",
+        "required" : false 
+    }]
 }

@@ -1,0 +1,289 @@
+{
+  "map": [
+    {
+      "mbean": "java.lang:type=Memory",
+      "attributes": [
+       	{
+          "attribute": "HeapMemoryUsage",
+          "dataType": "javax.management.openmbean.CompositeData",
+          "metricName": "KAFKA_JVM_HEAPMEMORY_USED",
+          "key": "used",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.server:type=BrokerTopicMetrics,name=MessagesInPerSec",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "KAFKA_TOPIC_MESSAGE_IN_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.server:type=BrokerTopicMetrics,name=BytesInPerSec",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "KAFKA_TOPIC_BYTE_IN_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.server:type=BrokerTopicMetrics,name=BytesOutPerSec",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "KAFKA_TOPIC_BYTE_OUT_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.network:type=RequestMetrics,name=RequestsPerSec,request=Produce",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "KAFKA_PRODUCE_REQUEST_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.network:type=RequestMetrics,name=RequestsPerSec,request=FetchConsumer",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "KAFKA_CONSUME_REQUEST_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.network:type=RequestMetrics,name=RequestsPerSec,request=FetchFollower",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "KAFKA_FOLLOW_REQUEST_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.server:type=BrokerTopicMetrics,name=FailedProduceRequestsPerSec",
+      "attributes": [
+       	{
+          "attribute": "Count",
+          "dataType": "long",
+          "metricName": "KAFKA_PRODUCE_REQUEST_FAILS",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.server:type=BrokerTopicMetrics,name=FailedFetchRequestsPerSec",
+      "attributes": [
+       	{
+          "attribute": "Count",
+          "dataType": "long",
+          "metricName": "KAFKA_FETCH_REQUEST_FAILS",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.server:type=ReplicaManager,name=IsrExpandsPerSec",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "KAFKA_ISR_EXPAND_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.server:type=ReplicaManager,name=IsrShrinksPerSec",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "KAFKA_ISR_SHRINK_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.network:type=RequestMetrics,name=TotalTimeMs,request=Produce",
+      "attributes": [
+       	{
+          "attribute": "Count",
+          "dataType": "long",
+          "metricName": "KAFKA_PRODUCE_REQUEST_TOTAL_TIME",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.network:type=RequestMetrics,name=TotalTimeMs,request=FetchConsumer",
+      "attributes": [
+       	{
+          "attribute": "Count",
+          "dataType": "long",
+          "metricName": "KAFKA_CONSUME_REQUEST_TOTAL_TIME",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.network:type=RequestMetrics,name=TotalTimeMs,request=FetchFollower",
+      "attributes": [
+       	{
+          "attribute": "Count",
+          "dataType": "long",
+          "metricName": "KAFKA_FOLLOW_REQUEST_TOTAL_TIME",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.network:type=RequestMetrics,name=ResponseSendTimeMs,request=Produce",
+      "attributes": [
+       	{
+          "attribute": "Count",
+          "dataType": "long",
+          "metricName": "KAFKA_PRODUCE_REQUEST_RESPONSE_TIME",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.network:type=RequestMetrics,name=ResponseSendTimeMs,request=FetchConsumer",
+      "attributes": [
+       	{
+          "attribute": "Count",
+          "dataType": "long",
+          "metricName": "KAFKA_CONSUME_REQUEST_RESPONSE_TIME",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.network:type=RequestMetrics,name=ResponseSendTimeMs,request=FetchFollower",
+      "attributes": [
+       	{
+          "attribute": "Count",
+          "dataType": "long",
+          "metricName": "KAFKA_FOLLOW_REQUEST_RESPONSE_TIME",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.network:type=SocketServer,name=NetworkProcessorAvgIdlePercent",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "KAFKA_NETWORK_PROCESSOR_IDLE_TIME",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.server:type=KafkaRequestHandlerPool,name=RequestHandlerAvgIdlePercent",
+      "attributes": [
+       	{
+          "attribute": "MeanRate",
+          "dataType": "double",
+          "metricName": "KAFKA_REQUEST_HANDLER_THREADS_IDLE_TIME",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    }
+    ]
+}
