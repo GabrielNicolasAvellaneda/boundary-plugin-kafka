@@ -284,6 +284,186 @@
         }
         ],
       "enabled": true
+    },
+    {
+      "mbean": "kafka.server:type=ReplicaManager,name=UnderReplicatedPartitions",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "int",
+          "metricName": "KAFKA_UNDER_REPLICATED_PARTITIONS",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.controller:type=ControllerStats,name=LeaderElectionRateAndTimeMs",
+      "attributes": [
+       	{
+          "attribute": "Count",
+          "dataType": "long",
+          "metricName": "KAFKA_LEADER_ELECTION_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.controller:type=ControllerStats,name=UncleanLeaderElectionsPerSec",
+      "attributes": [
+       	{
+          "attribute": "Count",
+          "dataType": "long",
+          "metricName": "KAFKA_UNCLEAN_LEADER_ELECTION_RATE",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.server:type=ReplicaFetcherManager,name=MaxLag,clientId=Replica",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "long",
+          "metricName": "KAFKA_MAX_LAG_MESSAGES_FOLLOWER_AND_REPLICAS",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.server:type=ProducerRequestPurgatory,name=PurgatorySize",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "int",
+          "metricName": "KAFKA_PRODUCER_PURGATORY_REQUESTS_WAITING",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.server:type=FetchRequestPurgatory,name=PurgatorySize",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "int",
+          "metricName": "KAFKA_FETCH_PURGATORY_REQUESTS_WAITING",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.server:type=ReplicaManager,name=LeaderCount",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "int",
+          "metricName": "KAFKA_LEADER_COUNT",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.server:type=ReplicaManager,name=PartitionCount",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "int",
+          "metricName": "KAFKA_PARTITIONS_COUNT",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.server:type=ProducerRequestPurgatory,name=NumDelayedRequests",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "int",
+          "metricName": "KAFKA_PRODUCER_PURGATORY_REQUESTS_DELAYED",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.server:type=FetchRequestPurgatory,name=NumDelayedRequests",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "int",
+          "metricName": "KAFKA_FETCH_PURGATORY_REQUESTS_DELAYED",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.controller:type=KafkaController,name=OfflinePartitionsCount",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "int",
+          "metricName": "KAFKA_OFFLINE_PARTITIONS_COUNT",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
+    },
+    {
+      "mbean": "kafka.controller:type=KafkaController,name=ActiveControllerCount",
+      "attributes": [
+       	{
+          "attribute": "Value",
+          "dataType": "int",
+          "metricName": "KAFKA_ACTIVE_CONTROLLER_COUNT",
+          "key": "",
+          "metricType": "standard",
+          "scale": 1,
+          "enabled": true
+        }
+        ],
+      "enabled": true
     }
     ]
 }

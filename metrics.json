@@ -150,5 +150,101 @@
     "displayName": "Request Handler Idle Time",
     "displayNameShort": "Request Handler Idle Time",
     "unit": "percent"
+  },
+  "KAFKA_UNDER_REPLICATED_PARTITIONS": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Under Replicated Partitions",
+    "displayName": "Under Replicated Partitions",
+    "displayNameShort": "Under Replicated Partitions",
+    "unit": "number"
+  },
+  "KAFKA_LEADER_ELECTION_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Leader Election Rate",
+    "displayName": "Leader Election Rate",
+    "displayNameShort": "Leader Election",
+    "unit": "number"
+  },
+  "KAFKA_UNCLEAN_LEADER_ELECTION_RATE": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Unclean Leader Election Rate",
+    "displayName": "Unclean Leader Election Rate",
+    "displayNameShort": "Unclean Leader Election",
+    "unit": "number"
+  },
+  "KAFKA_MAX_LAG_MESSAGES_FOLLOWER_AND_REPLICAS": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Max Lag in Messages between Followers and Leader Replicas",
+    "displayName": "Max Lag Messages Followers and Replicas",
+    "displayNameShort": "Max Lag Messages Replicas",
+    "unit": "number"
+  },
+  "KAFKA_PRODUCER_PURGATORY_REQUESTS_WAITING": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Producer Purgatory Requests Waiting",
+    "displayName": "Producer Purgatory Requests",
+    "displayNameShort": "Prod. Purgatory Req. Waiting",
+    "unit": "number"
+  },
+  "KAFKA_PRODUCER_PURGATORY_REQUESTS_DELAYED": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Producer Purgatory Requests Delayed",
+    "displayName": "Producer Purgatory Requests Delayed",
+    "displayNameShort": "Prod. Purgatory Req. Delayed",
+    "unit": "number"
+  },
+  "KAFKA_FETCH_PURGATORY_REQUESTS_WAITING": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Fetch Purgatory Requests Waiting",
+    "displayName": "Fetch Purgatory Requests Waiting",
+	    "displayNameShort": "Fet. Purgatory Req. Waiting",
+    "unit": "number"
+  },
+  "KAFKA_FETCH_PURGATORY_REQUESTS_DELAYED": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Fetch Purgatory Requests Delayed",
+    "displayName": "Fetch Purgatory Requests Delayed",
+    "displayNameShort": "Fet. Purgatory Req. Delayed",
+    "unit": "number"
+  },
+  "KAFKA_LEADER_COUNT": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Number of Leaders",
+    "displayName": "Leaders Count",
+    "displayNameShort": "Leaders Count",
+    "unit": "number"
+  },
+  "KAFKA_PARTITIONS_COUNT": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Number of partitions",
+    "displayName": "Partitions Count",
+    "displayNameShort": "Partitions Count",
+    "unit": "number"
+  },
+  "KAFKA_OFFLINE_PARTITIONS_COUNT": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Number of offline partitions",
+    "displayName": "Offline Partitions",
+    "displayNameShort": "Offline Partitions",
+    "unit": "number"
+  },
+  "KAFKA_ACTIVE_CONTROLLER_COUNT": {
+    "defaultAggregate": "max",
+    "defaultResolutionMS": 1000,
+    "description": "Kafka - Number of active Controllers",
+    "displayName": "Active Controllers Count",
+    "displayNameShort": "Active Controllers Count",
+    "unit": "number"
   }
 }
