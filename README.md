@@ -60,29 +60,18 @@ $ JMX_PORT=9990 ./bin/kafka-server-start.sh config/server.properties
 | KAFKA_FOLLOW_REQUEST_RESPONSE_TIME | Total time to send the reponse to a Follower. |
 | KAFKA_NETWORK_PROCESSOR_IDLE_TIME | The average fraction of time the network processors are idle. |
 | KAFKA_REQUEST_HANDLER_THREADS_IDLE_TIME | The average fraction of time the request handler threads are idle. |  
-| KAFKA_MESSAGE_CONSUMER_LAG | Number of messages the consumer lags abehind the producer by. |
-| KAFKA_LOG_FLUSH_RATE_AND_TIME | Log flush rate. |  
-| KAFKA_UNDER_REPLICATED_PARTITIONS | |
-| KAFKA_LEADER_ELECTION_RATE | Leader election rate. |
-| KAFKA_MAX_LAG_MESSAGES_FOLLOWER_AND_REPLICAS |
-| KAFKA_REQUESTS_WAITING_PRODUCER_PURGATORY | Number of request waiting in the producer purgatory |
-| KAFKA_PARTITION_COUNT | Number of partitions. |
+| KAFKA_UNDER_REPLICATED_PARTITIONS | Number of under replicated partitions. |
+| KAFKA_LEADER_ELECTION_RATE | Leader election rate. A non-zero value means broker failures. |
+| KAFKA_UNCLEAN_LEADER_ELECTION_RATE | Unclean leader election rate. |
+| KAFKA_MAX_LAG_MESSAGES_FOLLOWER_AND_REPLICAS | Max lag in message between follower and leader replicas. |
+| KAFKA_PRODUCER_PURGATORY_REQUESTS_WAITING | Number of request waiting in the producer purgatory |
+| KAFKA_PRODUCER_PURGATORY_REQUESTS_DELAYED | Number of delayed request in producer purgatory |_
+| KAFKA_FETCH_PURGATORY_REQUESTS_WAITING | Number of requests waiting in the fetch purgatory |
+| KAFKA_FETCH_PURGATORY_REQUESTS_DELAYED | Number of delayed request in fetch purgatory |
 | KAFKA_LEADER_COUNT | Number of leaders. |
-| KAFKA_PRODUCER_REQUEST_PURGATORY_SIZE | Size of the Producer's request purgatory. |
-| KAFKA_FETCH_REQUEST_PURGATORY_SIZE | Size of the Fetch's purgatory. |
-| KAFKA_FETCH_REQUEST_EXPIRATION_RATE | Expiration rate for fetch requests. |
-| KAFKA_PRODUCER_REQUEST_EXPIRATION_RATE | Expiration rate for producer requests. | 
-| KAFKA_REQUESTS_WAITING_FETCH_PURGATORY | Number of requests waiting in the fetch purgatory |
-| KAFKA_PRODUCER_REQUEST_QUEUE_TOTAL_TIME | Total time of Producer requests waiting in the Request Queue. |
-| KAFKA_CONSUMER_REQUEST_QUEUE_TOTAL_TIME | Total time of Fetch Consumers requests waiting in the Request Queue. |
-| KAFKA_FOLLOWER_REQUEST_QUEUE_TOTAL_TIME | Total time of Fetch Followers requests waiting in the Request Queue. |
-| KAFKA_PRODUCER_REQUEST_LEADER_TOTAL_TIME | Total time of Producer's requests processed at the leader. |
-| KAFKA_CONSUMER_REQUEST_LEADER_TOTAL_TIME | Total time of Consumer's requests processed at the leader. |
-| KAFKA_FOLLOWER_REQUEST_LEADER_TOTAL_TIME | Total time of Follower's requests processed at the leader. |
-| KAFKA_PRODUCER_REQUEST_FOLLOWER_TOTAL_TIME | Total time of Producer's requests waiting for the follower. |
-| KAFKA_CONSUMER_REQUEST_FOLLOWER_TOTAL_TIME | Total time of Consumer's requests wiating for the follower. |
-| KAFKA_FOLLOWER_REQUEST_FOLLOWER_TOTAL_TIME | Total time of Follower's requests waiting ofr the follower. |
-| KAFKA_MESSAGE_CONSUMER_LAG | Number of messages the consumer lags abehind the producer by. |
+| KAFKA_PARTITIONS_COUNT | Number of partitions. |
+| KAFKA_OFFLINE_PARTITIONS_COUNT | Number of offline partitions. |
+| KAFKA_ACTIVE_CONTROLLER_COUNT | Number of active controllers. |
 
 ### Dashboards
 
