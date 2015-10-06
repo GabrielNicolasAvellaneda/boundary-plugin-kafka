@@ -35,7 +35,6 @@ $ JMX_PORT=9990 ./bin/kafka-server-start.sh config/server.properties
 | Password      | Password of the Kafka JMX endpoint. |
 | Source        | The Source to display in the legend for the metrics data.  It will default to the hostname of the server.|
 | Poll Interval | How often should the plugin poll for metrics. |
-| Topics        | List of topics to monitor (optional). You can get global metrics as well as metrics disaggregated by topic. |
 
 ### Metrics Collected
 

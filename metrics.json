@@ -228,7 +228,7 @@
     "defaultResolutionMS": 1000,
     "description": "Kafka - Number of partitions",
     "displayName": "Partitions Count",
-    "displayNameShort": "Parittions Count",
+    "displayNameShort": "Partitions Count",
     "unit": "number"
   },
   "KAFKA_OFFLINE_PARTITIONS_COUNT": {
